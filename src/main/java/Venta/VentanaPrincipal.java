@@ -251,19 +251,18 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Vehículo guardado exitosamente!");
 
                 // Limpiar campos
-                this.cedula.setText(""); // Limpiar 
-                this.nombre.setText("");  // Limpiar 
-                this.apellidos.setText("");   // Limpiar 
+                this.jTextField1.setText(""); // Limpiar 
+                this.jTextField2.setText("");  // Limpiar 
+                this.jTextField3.setText("");   // Limpiar 
                 this.estadoField.setText(""); // Limpiar
                 this.marcaField.setText(""); // Limpiar 
                 this.placaField.setText(""); // Limpiar 
+            
             } catch (Exception ex) {
                 JOptionPane.showMessageDialog(this, "Error al guardar vehículo: " + ex.getMessage());
             }
                 
         
-    }//GEN-LAST:event_btnGuardarVehiculoActionPerformed
-
     private void placaFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_placaFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_placaFieldActionPerformed
@@ -326,11 +325,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Error al reservar turno: " + ex.getMessage());
             }
         }
-
-
-
-
-    }//GEN-LAST:event_btnCrearTurnoActionPerformed
 
     private void marcaFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_marcaFieldActionPerformed
         // TODO add your handling code here:
